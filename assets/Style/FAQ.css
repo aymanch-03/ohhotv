@@ -1,0 +1,260 @@
+@import url("home.css");
+
+.background-overlay {
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  background-color: transparent;
+  background-image: linear-gradient(90deg, #222 30%, #979797 100%);
+  opacity: 0.6;
+  transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+  z-index: 0;
+}
+.hero1 {
+  position: relative;
+  margin-top: -175px;
+  margin-bottom: 0px;
+  padding: 14% 0% 5% 0%;
+  background-image: url("../Images/futuristic-server-room.jpg");
+  background-position: 0px 20%;
+  background-size: cover;
+}
+.hero1-content {
+  padding: 10px;
+  text-align: center;
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 1;
+}
+.hero1-content h2 {
+  margin: 0px 0px 20px 0px;
+  font-family: "Nunito", sans-serif;
+  font-size: 50px;
+  font-weight: 700;
+  hyphens: manual;
+  line-height: 24px;
+  color: #fff;
+  z-index: 3;
+}
+.hero1-content p a {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+}
+.head {
+  z-index: 3;
+  position: relative;
+}
+
+@media screen and (max-width: 1024px) {
+  .hero1 {
+    margin-top: -192px;
+    margin-bottom: 0px;
+    padding: 27% 0% 12% 0%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .hero1 {
+    margin-top: -121px;
+    margin-bottom: 0px;
+    padding: 150px 0px 70px 0px;
+  }
+  .hero1-content h2 {
+    font-size: 40px;
+    line-height: 1;
+  }
+}
+.section-3 {
+  padding: 10px 0px;
+}
+
+/* FAQ */
+.faq {
+  position: relative;
+  width: 100%;
+  margin-top: 20px;
+}
+.faq-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 40px;
+  padding-bottom: 120px;
+}
+.dropdown {
+  margin-bottom: 20px;
+}
+.faq-1 .dd-title,
+.faq-2 .dd-title {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: #343940;
+  background-color: #ffffff;
+  cursor: pointer;
+  border-radius: 50px 50px 50px 50px;
+  padding: 18px 18px 18px 30px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+}
+.content {
+  padding: 10px;
+}
+.dd-title i {
+  color: #343940;
+  font-size: 18px;
+  margin-right: 20px;
+}
+.dd-title h2 {
+  color: rgb(52, 57, 64);
+  cursor: pointer;
+  display: block;
+  font-family: "Nunito", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+}
+.dd-text {
+  padding: 30px 50px 10px 76px;
+  color: #343940;
+  font-size: 16px;
+  font-weight: 400;
+  transition-timing-function: cubic-bezier(0.34, 0, 0.9, 0.06);
+}
+
+@media screen and (max-width: 1024px) {
+  .faq-content {
+    grid-template-columns: 1fr;
+    max-width: 975px;
+  }
+}
+/* OPINION SECTION */
+.opinion {
+  background-color: #222;
+  transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 0px 0px 60px 0px;
+  position: relative;
+}
+.background-overlay-2 {
+  background-image: url("../Images/server.jpg");
+  background-position: center center;
+  opacity: 0.2;
+  transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+.opinion-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  color: #fff;
+  padding: 40px 10px 10px 10px;
+  position: relative;
+}
+.o1-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 20px;
+}
+.topc {
+  display: flex;
+  gap: 5px;
+}
+.topc span {
+  font-size: 40px;
+  font-weight: 700;
+}
+.botc {
+  font-size: 15px;
+  margin: 0;
+  font-weight: 400;
+}
+.topc i {
+  color: #f45374ff;
+  font-size: 25px;
+  font-weight: 900;
+}
+.num .botc {
+  padding-right: 5px;
+}
+.o2 .big-t {
+  color: #fff;
+}
+.o2-content {
+  margin-top: 50px;
+}
+.user-name-img {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.slider {
+  display: inline-block;
+}
+.slider img {
+  border-radius: 50%;
+  max-width: 100%;
+  width: 60px;
+  height: auto;
+  margin: 0;
+}
+.slider h2 {
+  color: #f45374ff;
+  display: block;
+  font-family: "Nunito", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  margin-left: 20px;
+}
+.user-text {
+  position: relative;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  z-index: 2;
+}
+.user-text p {
+  color: rgb(255, 255, 255);
+  font-family: "Nunito", sans-serif;
+  font-size: 16px;
+  font-weight: 200;
+}
+@media screen and (max-width: 1024px) {
+  .opinion-content {
+    grid-template-columns: 1fr;
+    max-width: 975px;
+  }
+  .topc {
+    justify-content: center;
+  }
+  .num {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 480px) {
+  .dd-text {
+    padding: 26px 50px 10px 65px;
+    font-size: 14px;
+  }
+  .dd-title h2 {
+    font-size: 16px;
+  }
+  .o1-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 20px;
+  }
+  .num .botc {
+    padding-right: 15px;
+    margin-bottom: 10px;
+  }
+  .num .botc:last-child {
+    padding-bottom: 0;
+  }
+  .o2-content {
+    margin-top: 20px;
+  }
+}

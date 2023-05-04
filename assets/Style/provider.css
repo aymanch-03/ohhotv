@@ -1,0 +1,53 @@
+@import url("home.css");
+@import url("FAQ.css");
+@import url("plan.css");
+
+.big-card-content .bg-rounded {
+  margin: -15px 0px 15px 0px;
+  padding: 25px;
+  border-radius: 40px 40px 40px 40px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.102);
+}
+.big-card-content .bg-rounded i {
+  font-size: 20px;
+  width: auto;
+  height: auto;
+}
+.icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+.provider-offre {
+  position: relative;
+}
+.provider-offre::before {
+  content: "+ Vendu";
+  text-transform: uppercase;
+  padding: 10px 70px;
+  background-color: #f45374ff;
+  color: #fff;
+  border: none;
+  border-radius: 0 0 100px 100px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  font-size: 14px;
+  text-align: center;
+  transform: translate(-50%, 0px);
+  white-space: nowrap;
+}
+.choiceBtn {
+  margin-block: 30px;
+  text-align: center;
+  display: block;
+}
+.cr {
+  text-transform: capitalize !important;
+}
+.blue-div-button button {
+  white-space: nowrap;
+  width: auto;
+  padding: 15px;
+}

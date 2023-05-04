@@ -1,0 +1,144 @@
+/* CSS FILES */
+@import url("../assets/Style/home.css");
+@import url("../assets/Style/FAQ.css");
+@import url("../assets/Style/plan.css");
+@import url("../assets/Style/contact.css");
+@import url("../assets/Style/tuto.css");
+@import url("../assets/Style/provider.css");
+
+.apps-tutos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.apps-tutos-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 50px 80px;
+  gap: 50px;
+}
+.application-info {
+  align-self: center;
+}
+.application-name {
+  color: rgb(52, 57, 64);
+  font-size: 32px;
+  font-weight: 700;
+}
+.apps-features ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.apps-features ul li {
+  display: flex;
+  flex-direction: column;
+}
+.apps-features span {
+  color: rgb(233, 26, 47);
+  padding-left: 15px;
+  font-size: 17;
+}
+.apps-features .feat {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  padding-bottom: 10px;
+}
+.application-name,
+.apps-features ul {
+  margin-bottom: 20px;
+}
+.rate h4 {
+  font-weight: 400;
+}
+.rate {
+  border: none;
+}
+.app-faq-content {
+  display: grid;
+  grid-template-columns: 2.5fr 1.5fr;
+  gap: 130px;
+  padding-block: 50px;
+}
+br {
+  line-height: 3;
+}
+.left-faq .application-name {
+  font-size: 20px;
+}
+.right-faq {
+  padding: 40px 0px 10px 40px;
+  border-radius: 30px 30px 30px 30px;
+  box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.15);
+  width: 300px;
+  height: 300px;
+}
+.right-faq h2 {
+  font-size: 20px;
+  padding-block: 20px;
+}
+.right-faq h4 {
+  font-size: 16px;
+  padding-bottom: 5px;
+}
+.right-faq h2,
+.right-faq h4 {
+  font-weight: 400;
+}
+.right-faq .small-icon {
+  display: inline-block;
+  border-bottom: solid 1px #000;
+  padding-bottom: 10px;
+}
+.si {
+  padding-bottom: 10px;
+}
+
+.left-faq h3 {
+  color: rgb(51, 51, 51);
+  font-family: "Nunito", sans-serif;
+  font-size: 28px;
+  font-weight: 500;
+  padding-block: 20px;
+}
+.left-faq p {
+  color: rgb(51, 51, 51);
+  font-family: "Nunito", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+.app-faq .dd-title {
+  background-color: #e3e3e3;
+  border-radius: 15px 15px 15px 15px;
+}
+
+@media screen and (max-width: 1024px) {
+  .apps-tutos-content {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  .app-faq-content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .apps-features ul {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .rate {
+    display: inline-block;
+  }
+  .rate > * {
+    padding-bottom: 10px;
+  }
+  .application-name {
+    font-size: 22px;
+  }
+  .apps-tutos-content {
+    padding: 30px 20px;
+    gap: 50px;
+  }
+}

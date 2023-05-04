@@ -1,0 +1,83 @@
+@import url("home.css");
+@import url("FAQ.css");
+.service {
+  background-color: #222;
+  transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+  padding: 20px 0px 5px 0px;
+  position: relative;
+}
+
+.background-overlay-3 {
+  background-image: url("../Images/router.jpg");
+  background-position: bottom center;
+  opacity: 0.3;
+  transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+.service-content {
+  color: #fff;
+  padding: 10px;
+  position: relative;
+}
+.service .big-t {
+  color: #fff;
+}
+.service p {
+  color: #fff;
+}
+
+.plan-page .p2 p {
+  border-bottom: none;
+}
+.plan-page .dd-title i {
+  margin-bottom: 0;
+}
+.plan-page .dd-text {
+  padding: 10px 50px 10px 76px;
+}
+.plan-page {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 110px;
+  padding: 60px 10px 70px 10px;
+}
+.blue-div-content {
+  background-color: #222;
+  transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+  padding: 70px 70px 70px 70px;
+  border-radius: 10px 10px 10px 10px;
+}
+.plan-page .p1 {
+  align-self: start;
+}
+.plan-page .p2 p {
+  padding-bottom: noen;
+}
+.plan-page .p2 .black-text {
+  color: #343940;
+}
+.blue-div-content .big-t {
+  color: #fff;
+}
+
+.plan-page span {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+}
+.plan-page .blue-div-button {
+  text-align: left;
+}
+
+@media screen and (max-width: 1024px) {
+  .plan-page {
+    grid-template-columns: 1fr;
+  }
+  .plan-page .blue-div-button {
+    text-align: center;
+  }
+}
