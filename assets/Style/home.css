@@ -9,6 +9,10 @@
   margin: 0;
   transition: all 0.3s;
 }
+body{
+  position:relative;
+  z-index:0;
+}
 *:not(i) {
   font-family: "Nunito", sans-serif;
 }
